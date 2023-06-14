@@ -1,0 +1,54 @@
+body {
+    font-family: 'Merriweather', serif;
+    background-image: url('https://31.media.tumblr.com/f3286647ef7e2645f734267657789edf/tumblr_mqisq7lmEY1scu1fno1_500.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+img {
+    align-items: center;
+}
+
+.instructions {
+    font-size: 25px;
+}
+
+.header {
+    align-items: center;
+}
+
+.find-weather {
+    align-items: center;
+    background-color: white;
+}
+
+.all-info {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    margin-left: 275px;
+    margin-top: 50px;
+    width: 800px;
+    padding: 30px;
+    border: 6px solid #262e34;
+    /* margin: 50px; */
+    background-color: white;
+    
+}
+
+.location-find {
+    align-items: center;
+    text-align: center;
+}
+
+.all-weather-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

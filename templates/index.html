@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://static.vecteezy.com/system/resources/previews/014/299/685/original/vector-cartoon-yellow-sun-shining-light-rays-to-heat-the-summer-isolated-on-white-background-png.png"
+    />
+    <title>City Weather</title>
+    <link rel="stylesheet" type="text/css" href="/static/static.css"/>
+
+  </head>
+  <body>
+    <h1>City Weather</h1>
+    <div class="all-info">
+      <div class="location-find">
+        <p class="instructions"><b>Type in a city to know the weather</b></p>
+        <form action="/find-weather" method="POST">
+        <label for="city_input"><b>City</b>: </label>
+        <input type="text" id="city_name" name="city_name" autocomplete="off"> <p></p>
+        <button class="find-weather" type="submit">⤍</button>
+        </form>
+        <br>
+      </div>
+        <div class = "all-weather-info">
+          <img src='https://cdn.dribbble.com/users/1003944/screenshots/9339906/media/aebabbbd5f1c64a01584e958ec5f6a24.gif' alt="weather-gif" width="400" height="300">
+            <div class="weather-info">
+              <p><b>Conditions</b>: {{ data['weather'][0]['main'] }} </p>
+              <p><b>Temperature:</b> {{ data['main']['temp'] }} F</p>
+              <p><b>Temperature Minimum</b>: {{ data['main']['temp_min'] }} F</p>
+              <p><b>Temperature Maximum</b>: {{ data['main']['temp_max'] }} F</p>
+              <p><b>Feels Like</b>: {{ data['main']['feels_like'] }} F</p>
+              <p><b>Humidity</b>: {{ data['main']['humidity'] }}</p>
+              <p><b>Wind Speed</b>: {{ data['wind']['speed'] }} mph</p>
+            </div>
+        </div>
+      </div>
+
+</body>
+</html>
