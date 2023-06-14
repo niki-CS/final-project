@@ -11,7 +11,7 @@ h1 {
 }
 
 img {
-    align-items: center;
+    margin-top: -18px;
 }
 
 .instructions {
@@ -37,7 +37,6 @@ img {
     width: 800px;
     padding: 30px;
     border: 6px solid #262e34;
-    /* margin: 50px; */
     background-color: white;
     
 }

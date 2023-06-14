@@ -5,11 +5,6 @@ import requests
 app = Flask(__name__)
 api_key = 'ee7e9698cc898d0021e975781ad4cc4c'
 
-@app.route('/')
-def index():
-
-    return render_template('index.html')
-
 @app.route('/find-weather', methods=["post"])
 def weather():
     global api_key
@@ -21,6 +16,11 @@ def weather():
         print('No weather data. Try again!')
 
     return render_template('index.html', data=data)
+
+@app.route('/')
+def index():
+
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
